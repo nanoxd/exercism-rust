@@ -3,5 +3,5 @@ pub fn is_leap_year(year: u32) -> bool {
     //   except every year that is evenly divisible by 100
     //     unless the year is also evenly divisible by 400
 
-    year % 4 == 0
+    year % 4 == 0 && !(year % 100 == 0)
 }
