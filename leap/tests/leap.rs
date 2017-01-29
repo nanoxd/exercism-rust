@@ -6,13 +6,11 @@ fn test_vanilla_leap_year() {
 }
 
 #[test]
-#[ignore]
 fn test_any_old_year() {
     assert_eq!(leap::is_leap_year(1997), false);
 }
 
 #[test]
-#[ignore]
 fn test_century() {
     assert_eq!(leap::is_leap_year(1900), false);
 }
