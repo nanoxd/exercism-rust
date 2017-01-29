@@ -10,7 +10,6 @@ fn test_3() { assert_eq!("Pling", raindrops::raindrops(3)); }
 fn test_5() { assert_eq!("Plang", raindrops::raindrops(5)); }
 
 #[test]
-#[ignore]
 fn test_7() { assert_eq!("Plong", raindrops::raindrops(7)); }
 
 #[test]
@@ -23,7 +22,6 @@ fn test_9() { assert_eq!("Pling", raindrops::raindrops(9)); }
 fn test_10() { assert_eq!("Plang", raindrops::raindrops(10)); }
 
 #[test]
-#[ignore]
 fn test_14() { assert_eq!("Plong", raindrops::raindrops(14)); }
 
 #[test]
@@ -42,7 +40,6 @@ fn test_25() { assert_eq!("Plang", raindrops::raindrops(25)); }
 fn test_35() { assert_eq!("PlangPlong", raindrops::raindrops(35)); }
 
 #[test]
-#[ignore]
 fn test_49() { assert_eq!("Plong", raindrops::raindrops(49)); }
 
 #[test]
