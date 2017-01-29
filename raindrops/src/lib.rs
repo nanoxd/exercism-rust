@@ -1,12 +1,21 @@
 pub fn raindrops(num: i32) -> String {
-    let factor_of_three = |x: i32| x % 3 == 0;
-    let factor_of_five = |x: i32| x % 5 == 0;
-    let factor_of_seven = |x: i32| x % 7 == 0;
+    let mut string = String::new();
 
-    match num {
-        x if factor_of_three(x) => "Pling".into(),
-        x if factor_of_five(x) => "Plang".into(),
-        x if factor_of_seven(x) => "Plong".into(),
-        _ => format!("{}", num)
+    if num % 3 == 0 {
+        string.push_str("Pling");
     }
+
+    if num % 5 == 0 {
+        string.push_str("Plang");
+    }
+
+    if num % 7 == 0 {
+        string.push_str("Plong");
+    }
+
+    if string.is_empty() {
+        return format!("{}", num);
+    }
+
+    string
 }
