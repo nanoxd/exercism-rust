@@ -16,7 +16,6 @@ fn test_exclaiming() {
 }
 
 #[test]
-#[ignore]
 fn test_asking() {
     assert_eq!("Sure.", bob::reply("Does this cryogenic chamber make me look fat?"));
 }
