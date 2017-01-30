@@ -6,7 +6,6 @@ fn test_statement() {
 }
 
 #[test]
-#[ignore]
 fn test_shouting() {
     assert_eq!("Whoa, chill out!", bob::reply("WATCH OUT!"));
 }
@@ -52,4 +51,3 @@ fn test_non_question_with_question_mark() {
 fn test_silent_treatment() {
     assert_eq!("Fine. Be that way!", bob::reply(""));
 }
-
