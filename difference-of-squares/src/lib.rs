@@ -9,5 +9,5 @@ pub fn sum_of_squares(n: i32) -> i32 {
 }
 
 pub fn difference(n: i32) -> i32 {
-    170
+    square_of_sum(n) - sum_of_squares(n)
 }
