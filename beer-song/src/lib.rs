@@ -7,7 +7,7 @@ pub fn verse(n: i32) -> String {
     }
 }
 
-pub fn sing<'a>(from: i32, to: i32) -> String {
+pub fn sing(from: i32, to: i32) -> String {
     (to..from)
         .rev()
         .fold(verse(from), |acc, n| acc + "\n" + &verse(n))
